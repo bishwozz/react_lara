@@ -1,42 +1,62 @@
-# Laravel 9 & React js - Ecommerce application
+# React and Laravel CRUD
 
-## Screenshots
+A brief description of what this project does and who it's for
 
-![preview img](/preview.png)
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+<a href="https://github.com/dmarsal90/dmarsal90"><img src="https://img.shields.io/badge/status-updating-brightgreen.svg"></a> 
+
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/abdulaziz-m5u/ecommerce-youtube.git project-name
+  git clone https://github.com/dmarsal90/react-laravel.git
 ```
 
 Go to the project directory
 
+Navagate to the backend and frontend folder, install dependencies and start the server
+
+For the backend
 ```bash
-  cd project-name
+  cd api 
+  composer install
+  php artisan serve 
+```
+if you want to have some sample data run
+```bash
+    php artisan migrate
+    php artisan db:seed 
+```
+or
+```bash
+    php artisan migrate --seed
+```
+For the frontend
+```bash
+  cd front
+  npm install
+  npm run dev
 ```
 
--   Copy .env.example file to .env and edit database credentials there
+
+
+
+## Deployment
+
+To deploy this project run
 
 ```bash
-    composer install
+  npm run deploy
 ```
 
-```bash
-    php artisan key:generate
-```
 
-```bash
-    php artisan artisan migrate:fresh --seed
-```
+## Author
 
-```bash
-    php artisan storage:link
-```
-
-#### Login
-
--   email = admin@example.com
--   password = 123
+- [@dmarsal90](https://www.github.com/dmarsal90)
